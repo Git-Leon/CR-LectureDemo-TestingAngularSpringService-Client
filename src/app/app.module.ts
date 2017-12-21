@@ -1,22 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 
 import { AppComponent } from './app.component';
 import { UserInputTableComponent } from './components/user-input-table/user-input-table.component';
 import { AddUserService } from './services/add-user.service';
-import { UserComponent } from './models/user/user.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserInputTableComponent,
-    UserComponent
+    UserInputTableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     AddUserService
